@@ -1,0 +1,3 @@
+LC_ALL=C
+DEBIAN_FRONTEND=noninteractive
+minimal_apt_get_install='apt-get install -yqq --no-install-recommends -o DPkg::Options::=--force-confold -o DPkg::Options::=--force-confdef'
