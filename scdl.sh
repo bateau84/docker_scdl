@@ -30,7 +30,7 @@ if [ ! -f ${SCDL_DOWNLOAD_PATH}scdl.lock ]; then
             DEBUG_STRING=""
         fi
 
-        /home/scdl/.local/bin/scdl -l https://soundcloud.com/${MY_USERNAME} -a --download-archive ${SCDL_DOWNLOAD_PATH}completed -c ${DEBUG_STRING} --onlymp3 --addtofile || true
+        /home/scdl/.local/bin/scdl -l https://soundcloud.com/${MY_USERNAME} -a -c ${DEBUG_STRING} --onlymp3 --addtofile || true
 
         rm -rf ${SCDL_DOWNLOAD_PATH}scdl.lock
     fi
